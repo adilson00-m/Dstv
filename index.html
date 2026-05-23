@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darkmia • Premium</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <script src="https://www.google.com/recaptcha/api.js?render=SUA_SITE_KEY"></script>
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div class="spinner"></div>
+</div>
+
+<div id="ageModal" class="modal">
+  <div class="modal-content age-modal">
+    <h2>🔞 Verificação de Idade</h2>
+    <p>Você possui 18 anos ou mais?</p>
+
+    <button onclick="confirmAge(true)" class="yes-btn">SIM</button>
+    <button onclick="confirmAge(false)" class="no-btn">NÃO</button>
+  </div>
+</div>
+
+<header>
+  <nav>
+    <div class="logo">Darkmia</div>
+
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#vip-section">VIP</a></li>
+      <li><button onclick="showLogin()" class="login-btn">Área VIP</button></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Darkmia</h1>
+    <p>Experiência Exclusiva Premium 🔥</p>
+
+    <button onclick="showLogin()" class="cta-btn">
+      ACESSAR ÁREA VIP
+    </button>
+  </div>
+</section>
+
+<section class="section" id="planos">
+  <h2>Planos VIP</h2>
+
+  <div class="plans-grid">
+
+    <div class="plan-card">
+      <h3>Mensal</h3>
+      <p class="price">50 USDT</p>
+      <button onclick="payWithBinance(50)" class="pay-btn">
+        Comprar
+      </button>
+    </div>
+
+    <div class="plan-card popular">
+      <span class="badge">POPULAR</span>
+      <h3>Trimestral</h3>
+      <p class="price">135 USDT</p>
+      <button onclick="payWithBinance(135)" class="pay-btn">
+        Comprar
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section hidden" id="vip-section">
+  <h2>Área VIP 🔥</h2>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x500" alt="preview">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x500" alt="preview">
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Darkmia Premium</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
